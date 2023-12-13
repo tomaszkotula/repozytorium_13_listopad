@@ -1,9 +1,9 @@
 let firstNumber=10;
 let secondNumber=20;
-function Suma (firstNumber,secondNumber){
-    let Wynik=firstNumber+secondNumber;
-    return Wynik;
+function suma (firstNumber,secondNumber){
+    let wynik=firstNumber+secondNumber;
+    return wynik;
 }
-let Wynik=Suma(firstNumber,secondNumber);
+let wynik=suma(firstNumber,secondNumber);
  
-console.log(Wynik);
+console.log(wynik);
