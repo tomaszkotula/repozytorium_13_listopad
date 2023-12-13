@@ -1,6 +1,6 @@
-let Firstname="Tomasz";
-let Lastname="Kotula";
-console.log(Firstname);
-console.log(Lastname);
+let firstname="Tomasz";
+let lastname="Kotula";
+console.log(firstname);
+console.log(lastname);
 
 
