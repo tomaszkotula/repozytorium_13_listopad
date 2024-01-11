@@ -1,0 +1,38 @@
+
+p{
+    font-size: x-large;
+    color: aqua;
+    background-color: brown;
+ }
+
+
+.px_length {
+    width: 300px;
+    height: 1200px;
+    background-color: rgb(142, 134, 134);
+    color: rgb(16, 16, 17);
+    font-size: 32;
+    border: 5px solid black;
+  }
+  
+  .em_length {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(98, 157, 26);
+    color: rgb(34, 34, 196);
+    border: 5px solid rgb(13, 13, 13);
+  }
+ 
+  p id="czwarty"{
+    font-size: x-large;
+    color::content
+    font-size: xx-large;
+    background-color:rgb(42, 165, 140)4, 165, 42);
+ }
+
+ p{
+    font-size: x-large;
+    color: rgb(255, 0, 166);
+    font-size: xx-large;
+    background-color: rgb(138, 165, 42)4, 165, 42);
+ }

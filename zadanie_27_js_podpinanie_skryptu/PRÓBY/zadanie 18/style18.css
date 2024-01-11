@@ -1,0 +1,20 @@
+#tlo{
+  width: 800px; 
+  height: 400px; 
+  background-color: #faebd6;
+  border: 5px solid;
+}
+p{
+    font-size: 24px; 
+    color: #a42423;
+    margin-left: 5px;
+}
+h1{
+    color: #ff0000;
+    font-size:36px ;
+    margin-left: 10px;
+}
+
+span{
+    color:#00008f ;
+}
