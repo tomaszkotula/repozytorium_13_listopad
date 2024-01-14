@@ -1,0 +1,13 @@
+p{
+    color: crimson;
+}
+
+h1{
+    background-color: blue;
+}
+h3{
+    background-color: aquamarine;
+}
+h1+h3{
+    color: blueviolet;
+}

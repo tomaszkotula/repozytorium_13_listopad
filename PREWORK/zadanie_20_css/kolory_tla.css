@@ -1,0 +1,39 @@
+body{
+    background-color: aqua;
+}
+h1{
+   
+    background-color: blue;
+    color: rgb(239, 239, 14);
+}
+h2{
+    background-color: rgb(226, 154, 10);
+    color: rgb(196, 255, 215);
+}
+#paragraf1{
+    background-color: azure;
+    color: black;
+}
+#paragraf2{
+    background-color: rgb(223, 100, 184);
+    color: aqua;
+}
+#lista_numerowana{
+    background-color: rgb(172, 236, 82);
+    
+}
+.pierwszy_element{
+    color: rgb(75, 42, 165);
+}
+.drugi_element{
+    color: black;
+}
+.trzeci_element{
+    color: azure;
+}
+.czwarty_element{
+    color: blue;
+}
+.piaty_element{
+    color: red;
+}

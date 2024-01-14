@@ -1,0 +1,18 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    background-color:crimson;
+}
+.niebieski{
+    background-color: blue;
+}
+.przezroczysty{
+opacity:0.4;
+
+}
+#lista{
+ width: 150px; /*wygląda lepiej w przeglądarce*/
+ height: 100px;  
+}
