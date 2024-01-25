@@ -1,6 +1,24 @@
-.kwadrat {
-    width: 200;
-    height: 200;
-    background-color: aqua;
-    color: #db2020;
+.kwadrat_zewnetrzny {
+	height: 400px;
+	width: 400px;
+	background-color: #a6a9b6;
+	border: 10px #666360 solid;
+	position: relative;
+}
+
+.wewnetrzny {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	
+}
+
+.pomarancz {
+	background-color: #ff912e;
+    left: 0;
+	bottom: 0;
+}
+.szary {
+	background-color: #e4e4e4;
+	right: 0;
 }
