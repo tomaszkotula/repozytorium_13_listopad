@@ -1,0 +1,27 @@
+.box{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 15px;
+    transition: all 2s ease-in;
+    cursor:pointer
+}
+.czerwony{
+    background-color: crimson;
+}
+.czerwony:hover{
+    width: 300px;
+}
+.zielony{
+    background-color: darkgreen;
+}
+.zielony:hover{
+    height: 300px;
+}
+.niebieski{
+    background-color: blue;
+}
+.niebieski:hover{
+    height: 300px;
+    width: 300px;
+}

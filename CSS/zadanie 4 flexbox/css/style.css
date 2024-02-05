@@ -1,0 +1,65 @@
+.maly_kwadrat {
+    width: 32%;
+    height: 32%;
+    background-color: brown;
+    border: 2px solid white;
+    position: relative;
+}
+
+.kolo {
+    background-color: blanchedalmond;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.duzy_kwadrat {
+    width: 310px;
+    height: 310px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.czerwony {
+    background-color: crimson;
+}
+
+.niebieski {
+    background-color: blue;
+}
+
+.zielony {
+    background-color: darkgreen;
+}
+
+.zolty {
+    background-color: gold;
+
+}
+
+.czarny {
+    background-color: black;
+}
+
+.pomarancz {
+    background-color: darkorange;
+}
+
+.fiolet {
+    background-color: blueviolet;
+
+}
+
+.szary {
+    background-color: gray;
+}
+
+.roz {
+    background-color: rgb(215, 60, 171);
+}
