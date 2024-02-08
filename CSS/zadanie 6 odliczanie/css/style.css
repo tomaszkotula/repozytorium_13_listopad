@@ -1,0 +1,101 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-style: solid;
+    border-color: aquamarine;
+    border-width: 10px;
+}
+
+.number {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 70px;
+    top: 70px;
+}
+
+@keyframes count {
+    0% {
+        .count10 {
+            color: aliceblue;
+        }
+
+    }
+
+    10% {
+        .count9 {
+            color: aliceblue;
+        }
+
+    }
+
+    20% {
+        .count8 {
+            color: aliceblue;
+        }
+
+    }
+
+    30% {
+        .count7 {
+            color: aliceblue;
+        }
+
+    }
+
+    40% {
+        .count6 {
+            color: aliceblue;
+        }
+
+    }
+
+    50% {
+        .count5 {
+            color: aliceblue;
+        }
+
+    }
+
+    60% {
+        .count4 {
+            color: aliceblue;
+        }
+
+    }
+
+    70% {
+        .count3 {
+            color: aliceblue;
+        }
+
+    }
+
+    80% {
+        .count2 {
+            color: aliceblue;
+        }
+
+    }
+
+    90% {
+        .count1 {
+            color: aliceblue;
+        }
+
+    }
+
+    0% {
+        .countText {
+            color: aliceblue;
+        }
+
+    }
+}
+
+    .number {
+        animation-name:count;
+        animation-duration: 12s;
+        animation-timing-function: linear;
+        animation-iteration-count: calc(1);
+    }
