@@ -1,54 +1,83 @@
 
-@media (min-width:800px) {
-* {
-    font-size: larger;
-    color: aliceblue;
-    text-align: center;
+    .item {
+        font-size: 2em;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .container {
+        width: 1445px;
+        height: 900px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:stretch;
+        align-items: stretch;
+    }
+
+    .header {
+        flex-basis: 100%;
+        height: 10%;
+        align-self: flex-start;
+       background-color: red;
+       order:1;
+       
+
+    }
+
+    .asideleft {
+        background-color: darkgreen;
+
+        flex-basis: 25%;
+        height: 80%;
+        Order:4;
+        
+    }
+
+    .main {
+        background-color: deepskyblue;
+
+        flex-basis: 50%;
+        height: 80%;
+        order:2;
+
+        
+    }
+
+
+
+    .asideright {
+        background-color: hotpink;
+
+        flex-basis: 25%;
+        height: 80%;
+        order:3;
+        
+    }
+
+
+    .footer {
+        background-color: blueviolet;
+        flex-basis: 100%;
+        height: 10%;
+        align-self: flex-end;
+        order:5;
+        
+    }
+
+@media screen and (max-width: 992px){
+    .container{
+        width:33%;
+    }
+    
 }
 
-.box {
-    width: 1445px;
-    height: 900px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+@media screen  (min-width: 768px) and (max-width:992px);
+    .container{
+        width:49%;
+    }
 
-.header {
-    flex-basis: 100%;
-    height: 10%;
-
-    background-color: red;
-
-
-}
-
-.asideleft {
-    background-color: darkgreen;
-
-    flex-basis: 25%;
-    height:80% ;
-}
-
-.main {
-    background-color: deepskyblue;
-
-    flex-basis: 50%;
-    height:80% ;
-}
-
-
-.asideright {
-    background-color: hotpink;
-
-    flex-basis: 25%;
-    height:80% ;
-}
-
-
-.footer {
-    background-color: blueviolet;
-    flex-basis: 100%;
-    height:10% ;
-}
-}
+    @media screen  (max-width: 768px) ;
+    .container{
+        width:100%;
+    }
