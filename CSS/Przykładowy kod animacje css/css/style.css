@@ -1,53 +1,98 @@
 .box {
     border: 3px solid red;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(213, 15, 160);
+    position: relative;
+
+
+}
+
+
+.animate {
+
+    /* background-color: black; */
     width: 200px;
-    height: 200px;
-    background-color: black;
-
-
-}
-
-.number {
-    color: aliceblue;
-    background-color: black;
     position: absolute;
-    margin-top: 50px;
-    margin-left: 50px;
-    font-size: 6em;
-    transition-delay: 5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* /margin-top: 50px; */
+    /* margin-left: 50px; */
+    font-size: 7em;
+    animation-name: resize;
+    animation-duration: 1s;
+    transform: scale(0);
 }
+
 
 @keyframes resize {
     0% {
         transform: scale(1);
-        animation-delay: 1s;
+        color: aliceblue;
 
     }
 
     50% {
         transform: scale(0.5);
-        animation-delay: 1s;
 
     }
 
     75% {
         transform: scale(0.2);
-        animation-delay: 1s;
+
 
     }
 
     100% {
         transform: scale(0);
-        animation-delay: 1s;
+
 
     }
 
 }
 
-.animate {
-    animation-name: resize;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 
+.number1 {
+    animation-delay: 1s;
+}
+
+.number2 {
+    animation-delay: 2s;
+}
+
+.number3 {
+    animation-delay: 3s;
+}
+
+.number4 {
+    animation-delay: 4s;
+}
+
+.number5 {
+    animation-delay: 5s;
+}
+
+.number6 {
+    animation-delay: 6s;
+}
+
+.number7 {
+    animation-delay: 7s;
+}
+
+.number8 {
+    animation-delay: 8s;
+}
+
+.number9 {
+    animation-delay: 9s;
+}
+
+.number10 {
+    animation-delay: 10s;
+}
+
+.number11 {
+    animation-delay: 11s;
 }
