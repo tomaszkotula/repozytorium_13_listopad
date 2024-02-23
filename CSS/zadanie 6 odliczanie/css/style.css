@@ -1,50 +1,93 @@
 .box {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(0, 0, 0);
-    border-style: solid;
-    border-color: aquamarine;
-    border-width: 10px;
+    border: 3px solid red;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+
+
 }
 
-.number {
-    color:black
+
+.animate {
+
+    animation-name: resize;
     position: absolute;
-    left: 70px;
-    top: 70px;
-    animation-name: odliczanie;
+    top: 30%;
+    left: 30%;
+    font-size: 7em;
     animation-duration: 1s;
+    transform: scale(0);
+    color: aliceblue;
 }
 
-@keyframes odliczanie {
+
+@keyframes resize {
     0% {
-        .count10 {
-            transform: scale(1);
-            color: aliceblue;
-            animation-delay: 1s;
-            background-color: black;
-        }
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(0.5);
+
+    }
+
+    75% {
+        transform: scale(0.2);
 
 
     }
-}
 
-5% {
-    .count10 {
+    100% {
         transform: scale(0);
-        color: aliceblue;
-        animation-delay: 2s;
-        background-color: black;
+
+
     }
+
 }
 
 
+.number1 {
+    animation-delay: 1s;
+}
 
+.number2 {
+    animation-delay: 2s;
+}
 
+.number3 {
+    animation-delay: 3s;
+}
 
-.number {
-    animation-name: odliczanie;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: 2;
+.number4 {
+    animation-delay: 4s;
+}
+
+.number5 {
+    animation-delay: 5s;
+}
+
+.number6 {
+    animation-delay: 6s;
+}
+
+.number7 {
+    animation-delay: 7s;
+}
+
+.number8 {
+    animation-delay: 8s;
+}
+
+.number9 {
+    animation-delay: 9s;
+}
+
+.number10 {
+    animation-delay: 10s;
+}
+
+.number11 {
+    animation-delay: 11s;
 }
