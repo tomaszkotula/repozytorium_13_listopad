@@ -1,5 +1,3 @@
-
-
 .container {
     width: 100%;
 
@@ -7,25 +5,24 @@
 
     flex-wrap: wrap;
 
-}
-
-.item {
     font-size: 2em;
-    color: rgb(120, 138, 15);
+
+    color: rgb(245, 246, 242);
+
     text-align: center;
 }
 
 header {
     flex-basis: 100%;
 
-    height: 20%;
+   
     background-color: red;
 
 
 
 }
 
-asideleft {
+.asideleft {
     background-color: darkgreen;
 
     flex-basis: 25%;
@@ -46,7 +43,7 @@ article {
 
 
 
-asideright {
+.asideright {
     background-color: hotpink;
 
     flex-basis: 25%;
@@ -65,23 +62,45 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    .container {
-        width: 49%;
-        header:order 1;
-        article:order 2;
-        asideright:order 3;
-        asideleft:order 4;
-        footer:order 5;
+    .asideleft {
+      order: 1;
+      flex-basis: 100%;
+      min-height: 300px;
     }
+  
+    article {
+      flex-basis: 75%;
+    }
+  
+    footer {
+      order: 1;
+    }
+  
+  }
+  
+  @media screen and (max-width: 768px){
+    .asideleft {
+      order: 1;
+      flex-basis: 100%; 
+      min-height: 300px;
 
     }
-
-
-
-
-
-@media screen and (max-width: 768px){
-.container {
-    width:100%;
-}
-}
+  
+    .asideright {
+      order: 2;
+      flex-basis: 100%;
+      min-height: 300px;
+    }
+  
+    article {
+      flex-basis: 100%;
+      min-height: 300px;
+      order:0;
+    }
+  
+     footer {
+      order: 2;
+      flex-basis: 100%;
+      
+    }
+  }
