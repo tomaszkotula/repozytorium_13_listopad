@@ -1,0 +1,340 @@
+* {
+    /* ustawienie elastycznego kontenera na całości strony */
+    box-sizing: border-box;
+}
+
+body {
+    /* dedykowany styl tekstu open sans z googla */
+    font-family: "open sans", sans-serif;
+}
+
+hr {
+    /* stylowanie oddzielenia tekstu niebieska linia */
+    width: 70px;
+    border: 1px solid #007bff;
+    border-bottom: 0;
+}
+
+/* Stylowanie sekcji "O mnie" "Portfolio" i "kontakt" */
+section {
+    padding: 120px 0;
+}
+
+.section-header {
+    margin-bottom: 75px;
+}
+
+.section-header h2 {
+    color: #333;
+    font-size: 1.9em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* Stylowanie przycisków na stronie */
+.btn {
+    /* Usuwa podkreślenie odnośników */
+    text-decoration: none;
+    /* cały tekst dużymi literami */
+    text-transform: uppercase;
+    color: #333;
+    border: 2px solid #007bff;
+    padding: 14px 20px;
+    /* zmiana koloru przycisku po najechaniu kursorem */
+    transition: all .3s;
+    display: inline-block;
+    margin: auto;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    /* zmiana koloru przycisku po najechaniu kursorem */
+    color: #fff;
+    background-color: #007bff;
+
+}
+
+/* Ustalamy max szerokość kontenera */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main-header {
+    /* stylowanie headera */
+    height: 70vh;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    /* przykrywa całkowicie tło */
+    background-position: center;
+    /* Nie dubluje grafiki przy scrolowaniu no-repeat */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wyśrodkowanie elementów 
+"HTML.CSS.JavaScript"   oraz
+ "Dowiedz się więcej" */
+.main-header .main-header-content {
+    text-align: center;
+}
+
+/* h1 zadziała tylko w przypadu w elementach z tą klasą i tylko w tej kolejności
+ selektor podstawowy  */
+.main-header .main-header-content h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    /* Zmiana tekstu na drukowany */
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Dotyczy tylko paragrafu p o klasie main-header oraz main-header-content */
+.main-header .main-header-content p {
+    /* stylowanie w/w paragrafu */
+    color: #333;
+    font-size: 1.3em;
+    margin: 40px 0;
+}
+
+/* Stylowanie tylko kropek między słowami 
+"HTML.CSS.JavaScript" */
+.main-header .main-header-content p span {
+    color: #007bff;
+}
+/* Ustawiam labekę z checboxem na niewidoczną */
+.label[form="drop-nav"]{
+    display: none;
+}
+
+/* Stylowanie głównego menu nawigacyjnego 
+ "O mnie Portfolio Kontakt" */
+.main-menu {
+    background-color: #007bff;
+}
+/* ukrywanie checkboxa */
+#drop-nav{
+    display: none;
+}
+/* Wyśrodkowanie listy głównego menu nawigacyjnego 
+ "O mnie Portfolio Kontakt"  */
+.main-menu ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-menu ul .menu-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Stylowanie listy głównego menu nawigacyjnego 
+ "O mnie Portfolio Kontakt"  */
+
+.main-menu ul .menu-item a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 20px;
+    /* Wyświetlanie w postaci elastycznych pudełek */
+    display: block;
+    /* Czas reakcji po najechaniu myszą  */
+    transition: all .3s;
+}
+
+/* Zmiana koloru tła oraz czcionki menu po najechaniu kursorem */
+.main-menu ul .menu-item a:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+/* Style o klasie About wyśrodkowanie wszystkich elementów o tej klasie */
+.about {
+    text-align: center;
+}
+
+/* Zaokrąglenie obrazka pod warunkiem, że zdjęcie jest w proporcjach kwadratu */
+.about .about-img {
+    border-radius: 50%;
+}
+
+.about p {
+    /* szerokość kontenera aby była identyczna */
+    max-width: 700px;
+    /* Marginesy górny prawy dolny lewy */
+    margin: 40px auto 30px auto;
+    color: #777;
+    /* Wysokość linii */
+    line-height: 1.4;
+}
+
+/* Portfolio sekcje stylowanie */
+/* Główny kontener nakładanie tła */
+.portfolio {
+    background-color: #f2f1ed;
+}
+
+/*  */
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Cztery kolumny zdjęć dlatego 25% i wysokość kontenera  */
+.portfolio-wrapper .portfolio-item {
+    flex-basis: 25%;
+    height: 200px;
+    position: relative;
+}
+
+/* Ustawienie wielkości poszczególnych obrazków */
+.portfolio-wrapper .portfolio-item img {
+    width: 100%;
+    Height: 100%;
+    /* Powoduje wypełnienie przestrzeni przez obrazek */
+    object-fit: cover;
+}
+
+/* Ustawienie napisu po najechaniu na obrazek i zmiana tła na niebieski */
+.portfolio-wrapper .portfolio-item h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.8);
+    margin: 0;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 3em;
+    /* Napis "Projekt" istnieje ale jest przeźroczysty pojawia się po hover czyli po najechaniu kursowrem */
+    opacity: 0;
+    transition: all .3s;
+
+}
+
+/* Po najechaniu kursorem tekst staje się widoczny opacity:1 */
+.portfolio-wrapper .portfolio-item h3:hover {
+    opacity: 1;
+}
+
+/* Sekcja kontakt stylowanie */
+.contact form {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Ustawianie inputów obok siebie */
+.contact input[type="text"],
+.contact input[type="email"] {
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Ustawienie pola wiadomość */
+.contact textarea {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+/* Ustawienie ikonek social link na środku*/
+.social-links {
+    margin: top 75px;
+    text-align: center;
+
+}
+
+/* Stylowanie ikonek social link */
+.social-links .social-link {
+    font-size: 3.5em;
+    color: #007bff;
+    transition: all .3s;
+    /* Odsunięcie ikonek od siebie inline:block zmiana elementu jako 
+    element blokowy co umożliwia nadanie marginesów */
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* Zmiana koloru ikonek mediów społecznościowych na szary po najechaniu */
+.social-links .social-link:hover {
+    color: #777;
+}
+/* Stylowanie tekstu i ramki Main-footer */
+.main-footer {
+    background-color: #f2f1ed;
+    padding: 30px;
+    text-align: center;
+    color:#777;
+}
+/* Responsive styles dostosowanie rozdzielczości do innych urządzeń */
+@media(max-width:1200px){
+/* Dla maksymalnej rozdzielczości do 1200px */
+.container{
+    max-width: 992px;
+}
+}
+@media(max-width:992px){
+    container{
+        max-width: 768px;
+    }
+    /* Elementy porfolio przy tej rozdzielczości ustawiają się w dwóch kolumnach */
+    .portfolio-wrapper .portfolio-item{
+        flex-basis: 50%;
+    }
+
+}
+
+
+@media(max-width:768px){
+    container{
+        max-width: 95%;
+    }
+    /* Elementy porfolio przy tej rozdzielczości ustawiają się w jednej kolumnie */
+    .portfolio-wrapper .portfolio-item{
+        flex-basis: 100%;
+    }
+
+
+}
+
+
+@media(max-width:480px){
+.main-header .main-header-content h1{
+    /* Zmiana fonta nagłowka h1  przy najmniejszych rozdzielczościach main-header .main-header-content h1 {
+    font-size: 4.2em; */
+    font-size: 3em;
+}
+}
+.about .about-img{
+    max-height: 200px;
+    max-width: 200px;
+}
+label[for="drop-nav"] {
+    display: block;
+    padding: 14px 20px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1,5em;
+    text-align: right;
+    cursor: pointer;
+}
+.main-menu ul .menu-item {
+    display: block;
+    text-align: right;
+    margin: 0;
+}

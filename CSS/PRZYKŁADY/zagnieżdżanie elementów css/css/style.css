@@ -1,0 +1,41 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+
+a {
+	color: red;
+}
+
+.nav-menu .menu-item a {
+	color: green;
+}
+
+.nav-menu .menu-item a.active {
+	color: orange;
+}
+
+.nav-menu .menu-item:nth-child(4) a {
+	color: yellow;
+}
+
+.info a {
+	font-size: 60px;
+}
+
+.info h2 {
+	color: lightcoral;
+}
+
+.info p {
+	color: green;
+}
+
+.info p span {
+	color: red;
+}
+
+footer a {
+	color: blue;
+}
