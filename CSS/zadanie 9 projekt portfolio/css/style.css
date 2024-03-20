@@ -32,7 +32,7 @@ section {
     font-weight: 400;
 }
 
-/* Stylowanie przycisków na stronie */
+/* Stylowanie przycisków na stronie "Moje portfolio" */
 .btn {
     /* Usuwa podkreślenie odnośników */
     text-decoration: none;
@@ -107,8 +107,9 @@ section {
 .main-header .main-header-content p span {
     color: #007bff;
 }
+
 /* Ustawiam labekę z checboxem na niewidoczną */
-.label[form="drop-nav"]{
+.label[for="drop-nav"] {
     display: none;
 }
 
@@ -117,10 +118,12 @@ section {
 .main-menu {
     background-color: #007bff;
 }
+
 /* ukrywanie checkboxa */
-#drop-nav{
+#drop-nav {
     display: none;
 }
+
 /* Wyśrodkowanie listy głównego menu nawigacyjnego 
  "O mnie Portfolio Kontakt"  */
 .main-menu ul {
@@ -129,6 +132,7 @@ section {
     text-align: center;
 }
 
+/* Ustawienie blokowe elementów menu */
 .main-menu ul .menu-item {
     display: inline-block;
     margin: 0 10px;
@@ -175,12 +179,12 @@ section {
 }
 
 /* Portfolio sekcje stylowanie */
-/* Główny kontener nakładanie tła */
+/* Główny kontener nakładanie tła pod elementy ze zdjęciami */
 .portfolio {
     background-color: #f2f1ed;
 }
 
-/*  */
+/* Przenoszenie elementów do kolejnej linii jeśli będzie taka potrzeba */
 .portfolio-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -274,67 +278,83 @@ section {
 .social-links .social-link:hover {
     color: #777;
 }
+
 /* Stylowanie tekstu i ramki Main-footer */
 .main-footer {
     background-color: #f2f1ed;
     padding: 30px;
     text-align: center;
-    color:#777;
+    color: #777;
 }
+
 /* Responsive styles dostosowanie rozdzielczości do innych urządzeń */
-@media(max-width:1200px){
-/* Dla maksymalnej rozdzielczości do 1200px */
-.container{
-    max-width: 992px;
+@media(max-width:1200px) {
+
+    /* Dla maksymalnej rozdzielczości do 1200px
+      z przedziału od 992px-1200px*/
+    .container {
+        max-width: 992px;
+    }
 }
-}
-@media(max-width:992px){
-    container{
+/* Dla max rozdzielczości 992 px czyli
+ z przedziału od 768px do 992px */
+@media(max-width:992px) {
+    container {
         max-width: 768px;
     }
+
     /* Elementy porfolio przy tej rozdzielczości ustawiają się w dwóch kolumnach */
-    .portfolio-wrapper .portfolio-item{
+    .portfolio-wrapper .portfolio-item {
         flex-basis: 50%;
     }
 
 }
 
-
-@media(max-width:768px){
-    container{
+/* Dla max rozdzielczości 768px czyli 
+ z przedziału od 480px do 768px */
+@media(max-width:768px) {
+    container {
+        /* zostawia się miejsce na margines tj 95% */
         max-width: 95%;
     }
+
     /* Elementy porfolio przy tej rozdzielczości ustawiają się w jednej kolumnie */
-    .portfolio-wrapper .portfolio-item{
+    .portfolio-wrapper .portfolio-item {
         flex-basis: 100%;
     }
 
 
 }
 
-
-@media(max-width:480px){
-.main-header .main-header-content h1{
-    /* Zmiana fonta nagłowka h1  przy najmniejszych rozdzielczościach main-header .main-header-content h1 {
+/* Dla max rozdzielczości 480px czyli 
+ z przedziału od 0px do  480px */
+@media(max-width:480px) {
+    .main-header .main-header-content h1 {
+        /* Zmiana fonta nagłowka h1  przy najmniejszych rozdzielczościach main-header .main-header-content h1 {
     font-size: 4.2em; */
-    font-size: 3em;
-}
-}
-.about .about-img{
+        font-size: 3em;
+    }
+
+/* Ograniczenie wielkości zdjęca bohaterki */
+.about .about-img {
     max-height: 200px;
     max-width: 200px;
 }
+
 label[for="drop-nav"] {
     display: block;
     padding: 14px 20px;
-    color:#fff;
+    color: #fff;
     text-transform: uppercase;
-    font-size: 1,5em;
+    font-size: 1, 5em;
     text-align: right;
     cursor: pointer;
 }
+/* Ustawienie blokowe menu w przypadku
+ małych rozdzielczości jedna pod drugą z prawej strony  */
 .main-menu ul .menu-item {
     display: block;
     text-align: right;
     margin: 0;
+}
 }
