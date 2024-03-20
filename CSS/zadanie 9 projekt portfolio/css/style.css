@@ -4,12 +4,12 @@
 }
 
 body {
-    /* dedykowany styl tekstu open sans z googla */
+    /* dedykowany styl tekstu open sans z googla dla całej strony */
     font-family: "open sans", sans-serif;
 }
 
 hr {
-    /* stylowanie oddzielenia tekstu niebieska linia */
+    /* stylowanie oddzielenia tekstu niebieska linia pod tekstem "O mnie" */
     width: 70px;
     border: 1px solid #007bff;
     border-bottom: 0;
@@ -23,12 +23,13 @@ section {
 .section-header {
     margin-bottom: 75px;
 }
-
+/* Stylowanie  wszystkich nagłówków h2 na stronie */
 .section-header h2 {
     color: #333;
     font-size: 1.9em;
     text-align: center;
     text-transform: uppercase;
+    /* Grubość tekstu (bold) */
     font-weight: 400;
 }
 
@@ -57,7 +58,7 @@ section {
 
 }
 
-/* Ustalamy max szerokość kontenera */
+/* Ustalamy max szerokość kontenera czyli całej zawartości strony */
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -77,15 +78,14 @@ section {
     justify-content: center;
 }
 
-/* Wyśrodkowanie elementów 
-"HTML.CSS.JavaScript"   oraz
+/* Wyśrodkowanie elementów "HTML.CSS.JavaScript"   oraz
  "Dowiedz się więcej" */
 .main-header .main-header-content {
     text-align: center;
 }
 
 /* h1 zadziała tylko w przypadu w elementach z tą klasą i tylko w tej kolejności
- selektor podstawowy  */
+ selektor podstawowy Stylowanie nagłówka h1 czyli "Front End Developer" */
 .main-header .main-header-content h1 {
     font-size: 4.2em;
     color: #007bff;
@@ -109,7 +109,7 @@ section {
 }
 
 /* Ustawiam labekę z checboxem na niewidoczną */
-.label[for="drop-nav"] {
+label[for="drop-nav"] {
     display: none;
 }
 
@@ -167,7 +167,7 @@ section {
 .about .about-img {
     border-radius: 50%;
 }
-
+/* Stylowanie paragrafów z tekstem  */
 .about p {
     /* szerokość kontenera aby była identyczna */
     max-width: 700px;
@@ -178,20 +178,21 @@ section {
     line-height: 1.4;
 }
 
-/* Portfolio sekcje stylowanie */
+/* Portfolio sekcja z obrazkami stylowanie */
 /* Główny kontener nakładanie tła pod elementy ze zdjęciami */
 .portfolio {
     background-color: #f2f1ed;
 }
 
-/* Przenoszenie elementów do kolejnej linii jeśli będzie taka potrzeba */
+/* Przenoszenie elementów do kolejnej linii 
+jeśli będzie taka potrzeba tj. zmiana rozdzielczosci */
 .portfolio-wrapper {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-/* Cztery kolumny zdjęć dlatego 25% i wysokość kontenera  */
+/* Cztery kolumny zdjęć dlatego 25% i wysokość kontenera 200px */
 .portfolio-wrapper .portfolio-item {
     flex-basis: 25%;
     height: 200px;
@@ -235,6 +236,7 @@ section {
 .contact form {
     max-width: 700px;
     margin: 40px auto 30px auto;
+    /* Przy zmianie rozdzielczości zmienia się ustawienie  */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -299,7 +301,7 @@ section {
 /* Dla max rozdzielczości 992 px czyli
  z przedziału od 768px do 992px */
 @media(max-width:992px) {
-    container {
+    .container {
         max-width: 768px;
     }
 
@@ -313,7 +315,7 @@ section {
 /* Dla max rozdzielczości 768px czyli 
  z przedziału od 480px do 768px */
 @media(max-width:768px) {
-    container {
+    .container {
         /* zostawia się miejsce na margines tj 95% */
         max-width: 95%;
     }
@@ -346,7 +348,7 @@ label[for="drop-nav"] {
     padding: 14px 20px;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1, 5em;
+    font-size: 1.5em;
     text-align: right;
     cursor: pointer;
 }
@@ -356,5 +358,12 @@ label[for="drop-nav"] {
     display: block;
     text-align: right;
     margin: 0;
+}
+.main-menu ul {
+    display: none;
+}
+
+#drop-nav:checked + ul {
+    display: block;
 }
 }
