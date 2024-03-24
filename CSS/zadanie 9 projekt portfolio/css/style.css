@@ -66,6 +66,7 @@ section {
 
 .main-header {
     /* stylowanie headera */
+    /* wysokość jest 70% wysokości standardowej przeglądarki */
     height: 70vh;
     background-image: url(../img/header.jpg);
     background-size: cover;
@@ -201,6 +202,7 @@ jeśli będzie taka potrzeba tj. zmiana rozdzielczosci */
 
 /* Ustawienie wielkości poszczególnych obrazków */
 .portfolio-wrapper .portfolio-item img {
+    /* Wysokość i szerokość obrazka wypełnia całkowicie przewidziany obszar */
     width: 100%;
     Height: 100%;
     /* Powoduje wypełnienie przestrzeni przez obrazek */
