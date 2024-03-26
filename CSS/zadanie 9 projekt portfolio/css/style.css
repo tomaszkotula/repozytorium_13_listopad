@@ -368,4 +368,11 @@ label[for="drop-nav"] {
 #drop-nav:checked + ul {
     display: block;
 }
+.contact input[type="text"],
+.contact input[type="email"] {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
 }
